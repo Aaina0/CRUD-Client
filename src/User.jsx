@@ -7,7 +7,7 @@ function User() {
 
   useEffect(() => {
     axios
-      .get("https://crud-server-ivory.vercel.app/")
+      .get("http://localhost:3001")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   });
